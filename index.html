@@ -120,12 +120,12 @@ My reseach interest is broadly in representation theory, and more specifically i
 
 Articles and preprints:
 
-(arxiv:2207.11999) <i>On minimal tilting complexes in highest weight categories</i>, (2022).
-[article](https://doi.org/10.1090/ert/599)(arxiv:2107.03310) <i>Coxeter combinatorics for sum formulas in the representation theory of algebraic groups</i>, Rep. Theory 26 (2022), 68-93.
-[article](https://doi.org/10.1090/btran/58)(arxiv:2002.04848) <i>On complete reducibility of tensor products of simple modules over simple algebraic groups</i>, Trans. Amer. Math. Soc. Ser. B 8 (2021), 249-276.
+<a href="https://arxiv.org/abs/2207.11999" target="_blank">preprint</a> <i>On minimal tilting complexes in highest weight categories</i>, (2022).
+<a href="https://doi.org/10.1090/ert/599" target="_blank">article</a><a href="https://arxiv.org/abs/2107.03310" target="_blank">preprint</a> <i>Coxeter combinatorics for sum formulas in the representation theory of algebraic groups</i>, Rep. Theory 26 (2022), 68-93.
+<a href="https://doi.org/10.1090/btran/58" target="_blank">article</a><a href="https://arxiv.org/abs/2002.04848" target="_blank">preprint</a> <i>On complete reducibility of tensor products of simple modules over simple algebraic groups</i>, Trans. Amer. Math. Soc. Ser. B 8 (2021), 249-276.
 
 My PhD thesis is available here:
-[PhD thesis](https://infoscience.epfl.ch/record/293801?ln=en) <i> Generic direct summands of tensor products for simple algebraic groups and quantum groups at roots of unity</i>, (2022).
+<a href="https://infoscience.epfl.ch/record/293801?ln=en" target="_blank">PhD thesis</a> <i> Generic direct summands of tensor products for simple algebraic groups and quantum groups at roots of unity</i>, (2022).
 
 </div>
 
@@ -133,25 +133,6 @@ My PhD thesis is available here:
   Last updated on August 22, 2022.
 </div>
 
-
-<script>
-
-
-// do
-function replaceAll(string, search, replace) { // polyfill
-  return string.split(search).join(replace);
-}
-
-[].forEach.call(document.querySelectorAll(".sec,.tiny"), function(el) {
-  var t = el.innerHTML;
-  t = t.replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>').replace(/\(arxiv:([0-9\.]+)\)/g, '<a href="https://arxiv.org/abs/$1" target="_blank" rel="noopener">preprint</a>');
-  for (var k in macros)
-    t = replaceAll(t, k, macros[k]);
-  for (var k in labels)
-    t = replaceAll(t, k, k.replace(/^\[|\]$/g, '')+'<a href="'+labels[k]+'" target="_blank" rel="noopener">*</a>');
-  el.innerHTML = t;
-});
-</script>
 
 </body>
 </html>
