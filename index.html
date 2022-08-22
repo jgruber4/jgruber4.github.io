@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="description" content="Jonathan Gruber's webpage">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>Jonathan Gruber</title>
+<style>
+  html, body {margin: 0; padding: 0;}
+  body {
+   color: rgb(0,0,0);
+   font-family: Courier new;
+   font-size: 1rem;
+   padding-bottom: .2rem;
+  }
+  html {
+   height: 100%;
+   background-size: cover; -webkit-background-size: cover;
+   background-color: rgb(255,229,204);
+   transition: background 10000ms ease;
+  }
+ .sec, .tiny  {
+   box-sizing: border-box;
+   width: 50rem;
+   margin: 2rem auto;
+   padding: 1.5rem 2rem;
+   background: rgb(255,255,255);
+   backdrop-filter: blur(0.25em);
+   border-radius: .8rem;
+   line-height: 1.5;
+ }
+ @media only screen and (max-width: 55rem) {
+    .sec, .tiny  {
+      width: 95%;
+      padding: 1rem;
+      margin: 1rem auto;
+      font-size: .8em;
+    }
+ }
+ a, a:hover, a:active, a:visited, a:focus  {
+   color: rgb(0,0,192);
+   text-decoration: none;
+ }
+ a:hover {color: rgb(0,128,0);}
+#research a:before {content: '[';}
+#research a:after  {content: ']';}
+
+
+ ul {
+   margin: 0; padding: 0;
+   padding-left: 2rem;
+ }
+ 
+ .sec  {
+   white-space: pre-line;
+ }
+ .sec * {
+   white-space: normal;
+ }
+ .sec::first-line {
+   font-size: 1.5em;
+ }
+ 
+ .tiny {
+   font-size: 0.75em;
+ }
+ #navi  {display: none;}
+ 
+ b  {font-weight: normal; background-color: rgba(255,255,0,0.3); padding:0.3em;}
+ 
+ .print {display: none;}
+ @media only print  {
+    .print {display: block;}
+    body, div {background: none;}
+    body > div  {
+      width: auto;
+      border-radius: 0;
+      margin: 1.5rem 0;
+      padding: 0;
+    }
+    body  {font-size: 1rem;}
+ }
+</style>
+<script defer src="nightsky2.js"></script>
+<script defer src="rainbow-symbols.js"></script>
+</head>
+<body>
+
+<div id="navi">
+  <ul>
+  <li><a href="#info">Info</a></li>
+  <li><a href="#research">Research</a></li>
+  <li><a href="#teaching">Teaching</a></li>
+  <li><a href="#misc">Misc</a></li>
+  </ul>
+</div>
+
+<div class="print">
+<a href="http://johannesflake.de">johannesflake.de</a>
+</div>
+
+<div class="sec" id="about">Jonathan&nbsp;Gruber
+
+I am a research fellow at the National University of Singapore in the working group of <a href="https://blog.nus.edu.sg/huanchen/" target="_blank">Prof. Huanchen Bao</a>. Before that, I was a PhD student at the École Polytechnique Fédérale de Lausanne. My PhD advisor was <a href="https://people.epfl.ch/donna.testerman" target="_blank">Prof. Donna Testerman</a>. In June 2023, I will start a postdoc position at the University of York, funded by a postdoc mobility grant from the Swiss National Science Foundation.
+
+email: jgruber at nus.edu.sg
+
+</div>
+
+<div class="sec" id="research">Research
+
+My reseach interest is broadly in representation theory, and more specifically in the following topics:
+- representations of reductive algebraic groups and related topics;
+- tilting objects in highest weight categories;
+- homological methods in representation theory;
+- tensor categories, tensor ideals;
+- (diagrammatic) categorification;
+- Coxeter groups, Hecke algebras, Soergel bimodules.
+
+Articles and preprints:
+
+(arxiv:2207.11999) <i>On minimal tilting complexes in highest weight categories</i>, (2022).
+[article](https://doi.org/10.1090/ert/599)(arxiv:2107.03310) <i>Coxeter combinatorics for sum formulas in the representation theory of algebraic groups</i>, Rep. Theory 26 (2022), 68-93.
+[article](https://doi.org/10.1090/btran/58)(arxiv:2002.04848) <i>On complete reducibility of tensor products of simple modules over simple algebraic groups</i>, Trans. Amer. Math. Soc. Ser. B 8 (2021), 249-276.
+
+My PhD thesis is available here:
+[PhD thesis](https://infoscience.epfl.ch/record/293801?ln=en) <i> Generic direct summands of tensor products for simple algebraic groups and quantum groups at roots of unity</i>, (2022).
+
+</div>
+
+<div class="tiny" id="impressum">
+  Last updated on August 22, 2022.
+</div>
+
+
+<script>
+
+
+// do
+function replaceAll(string, search, replace) { // polyfill
+  return string.split(search).join(replace);
+}
+
+[].forEach.call(document.querySelectorAll(".sec,.tiny"), function(el) {
+  var t = el.innerHTML;
+  t = t.replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>').replace(/\(arxiv:([0-9\.]+)\)/g, '<a href="https://arxiv.org/abs/$1" target="_blank" rel="noopener">preprint</a>');
+  for (var k in macros)
+    t = replaceAll(t, k, macros[k]);
+  for (var k in labels)
+    t = replaceAll(t, k, k.replace(/^\[|\]$/g, '')+'<a href="'+labels[k]+'" target="_blank" rel="noopener">*</a>');
+  el.innerHTML = t;
+});
+</script>
+
+</body>
+</html>
