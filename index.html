@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name=viewport content="width=device-width, initial-scale=1">
-<meta name="description" content="This is the personal website of Jonathan Gruber, a mathematician at the University of York.">
+<meta name="description" content="This is the personal website of Jonathan Gruber, a mathematician at FAU Erlangen-Nuremberg.">
 <meta name="google-site-verification" content="O0fUe0aBTEj0AIcEZkqpWUghCK6bObjeRafB3U8u4hI" />
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <title>Jonathan Gruber</title>
@@ -21,7 +21,7 @@
    background-image: url('https://jgruber4.github.io/pictures/tiles.jpg');
    transition: background 10000ms ease;
   }
- .sec, .tiny  {
+ .sec, .tiny, .topnav  {
    box-sizing: border-box;
    width: 50rem;
    margin: 2rem auto;
@@ -46,6 +46,10 @@
  a:hover {color: rgb(0,128,0);}
 #research a:before {content: '[';}
 #research a:after  {content: ']';}
+#conferences a:before {content: '[';}
+#conferences a:after  {content: ']';}
+#teaching a:before {content: '[';}
+#teaching a:after  {content: ']';}
 
 
  ul {
@@ -101,12 +105,18 @@
 <a href="http://johannesflake.de">johannesflake.de</a>
 </div>
 
+ <div class="topnav">
+  <a href="#about">about</a> |
+  <a href="#research">research</a> |
+  <a href="#conferences">conferences</a> |
+  <a href="#teaching">teaching</a>
+</div> 
+
 <div class="sec" id="about">Jonathan&nbsp;Gruber
 
-I am a postdoc at the University of York, working with <a href="https://sites.google.com/site/chrisdbowman40/home" target="_blank">Chris Bowman</a> and <a href="https://www.york.ac.uk/maths/people/stephen-donkin/" target="_blank">Stephen Donkin</a>, and funded by a postdoc mobility grant from the Swiss National Science Foundation. Previously, I was a research fellow at the National University of Singapore, in the working group of <a href="https://blog.nus.edu.sg/huanchen/" target="_blank">Prof. Huanchen Bao</a>.
-I completed my PhD at the École Polytechnique Fédérale de Lausanne in 2022; my PhD advisor was <a href="https://people.epfl.ch/donna.testerman" target="_blank">Prof. Donna Testerman</a>.
+I am a postdoctoral researcher at Friedrich-Alexander University Erlangen-Nuremberg, in the working group of <a href="https://www.math.fau.de/algebra-und-geometrie/peter-fiebig/" target="_blank">Peter Fiebig</a>. Previously, I was a postdoc at the University of York (working with <a href="https://sites.google.com/site/chrisdbowman40/home" target="_blank">Chris Bowman</a> and <a href="https://www.york.ac.uk/maths/people/stephen-donkin/" target="_blank">Stephen Donkin</a>) and a research fellow at the National University of Singapore (in the working group of <a href="https://blog.nus.edu.sg/huanchen/" target="_blank">Huanchen Bao</a>). I completed my PhD at the École Polytechnique Fédérale de Lausanne in 2022; my PhD advisor was <a href="https://people.epfl.ch/donna.testerman" target="_blank">Donna Testerman</a>.
 
-email: jonathan.gruber at york.ac.uk
+email: jonathan.gruber at fau.de
 
 Here is a <a href="https://jgruber4.github.io/pictures/me_with_tiles.jpg" target="_blank">picture</a> of me.
 
@@ -124,28 +134,47 @@ My reseach interest is broadly in representation theory, and more specifically i
 
 Articles and preprints:
 
-<a href="https://arxiv.org/abs/2309.14804" target="_blank">preprint</a> <i>Generic direct summands of tensor products for simple algebraic groups and quantum groups</i> (2023).
-<a href="https://arxiv.org/abs/2304.07796" target="_blank">preprint</a> <i>Linkage and translation for tensor products of representations of simple algebraic groups and quantum groups</i> (2023).
-<a href="https://arxiv.org/abs/2211.10037" target="_blank">preprint</a> <i>Tensor ideals for quantum groups via minimal tilting complexes</i>, to appear in Proc. Amer. Math. Soc. (2022).
-<a href="https://doi.org/10.1017/S0017089523000113" target="_blank">article</a><a href="https://arxiv.org/abs/2210.02269" target="_blank">preprint</a> <i>Cohomology in singular blocks of parabolic category O</i>, Glasg. Math. J. (2023).
-<a href="https://doi.org/10.1007/s10468-022-10188-5" target="_blank">article</a><a href="https://arxiv.org/abs/2207.11999" target="_blank">preprint</a> <i>On minimal tilting complexes in highest weight categories</i>, Algebr. Represent. Theory (2022).
-<a href="https://doi.org/10.1090/ert/599" target="_blank">article</a><a href="https://arxiv.org/abs/2107.03310" target="_blank">preprint</a> <i>Coxeter combinatorics for sum formulas in the representation theory of algebraic groups</i>, Rep. Theory 26 (2022), 68-93.
-<a href="https://doi.org/10.1090/btran/58" target="_blank">article</a><a href="https://arxiv.org/abs/2002.04848" target="_blank">preprint</a> <i>On complete reducibility of tensor products of simple modules over simple algebraic groups</i>, Trans. Amer. Math. Soc. Ser. B 8 (2021), 249-276.
+<a href="https://arxiv.org/abs/2409.07888" target="_blank">preprint</a> <i>Multiplicity free and completely reducible tensor products for SL<sub>3</sub>(k) and Sp<sub>4</sub>(k)</i>.
+<a href="https://arxiv.org/abs/2309.14804" target="_blank">preprint</a> <i>Generic direct summands of tensor products for simple algebraic groups and quantum groups</i>.
+<a href="https://doi.org/10.1112/plms.12641" target="_blank">article</a><a href="https://arxiv.org/abs/2304.07796" target="_blank">preprint</a> <i>Linkage and translation for tensor products of representations of simple algebraic groups and quantum groups</i>, Proc. London Math. Soc., 129(4), e12641.
+<a href="https://doi.org/10.1090/proc/16607" target="_blank">article</a><a href="https://arxiv.org/abs/2211.10037" target="_blank">preprint</a> <i>Tensor ideals for quantum groups via minimal tilting complexes</i>, Proc. Amer. Math. Soc., 152(03), 967-975.
+<a href="https://doi.org/10.1017/S0017089523000113" target="_blank">article</a><a href="https://arxiv.org/abs/2210.02269" target="_blank">preprint</a> <i>Cohomology in singular blocks of parabolic category O</i>, Glasg. Math. J., 65(3), 555-568.
+<a href="https://doi.org/10.1007/s10468-022-10188-5" target="_blank">article</a><a href="https://arxiv.org/abs/2207.11999" target="_blank">preprint</a> <i>On minimal tilting complexes in highest weight categories</i>, Algebr. Represent. Theory, 26(6), 2753-2783.
+<a href="https://doi.org/10.1090/ert/599" target="_blank">article</a><a href="https://arxiv.org/abs/2107.03310" target="_blank">preprint</a> <i>Coxeter combinatorics for sum formulas in the representation theory of algebraic groups</i>, Rep. Theory 26, 68-93.
+<a href="https://doi.org/10.1090/btran/58" target="_blank">article</a><a href="https://arxiv.org/abs/2002.04848" target="_blank">preprint</a> <i>On complete reducibility of tensor products of simple modules over simple algebraic groups</i>, Trans. Amer. Math. Soc. Ser. B 8, 249-276.
 
 My PhD thesis is available here:
-<a href="https://infoscience.epfl.ch/record/293801?ln=en" target="_blank">PhD thesis</a> <i> Generic direct summands of tensor products for simple algebraic groups and quantum groups at roots of unity</i>, (2022).
+<a href="https://infoscience.epfl.ch/record/293801?ln=en" target="_blank">PhD thesis</a> <i> Generic direct summands of tensor products for simple algebraic groups and quantum groups at roots of unity</i>.
 
 </div>
 
-<div class="sec" id="research">Teaching
+<div class="sec" id="conferences">Conferences
+
+I am involved or have been involved in the organization of the following conferences.
+
+Groups and Representation Theory in Lausanne
+EPFL, November 19-21, 2024 <a href="https://groreptil24.epfl.ch/" target="_blank">website</a>
+
+Diagrammatic Intuition and Deep Learning in Mathematics
+University of York, July 15-19, 2024 <a href="https://sites.google.com/view/diagrammatic-learning/home" target="_blank">website</a>
+
+Combinatorial representation theory and diagrammatic categorification
+University of York, July 8-12, 2024 <a href="https://sites.google.com/view/york-lms-research-school-2024/home" target="_blank">website</a>
+
+Young Algebraists' Conference
+EPFL, September 6-10, 2021 <a href="https://archiveweb.epfl.ch/yac2021.epfl.ch/" target="_blank">website</a>
+
+</div>
+
+<div class="sec" id="teaching">Teaching
 
 In Semester 2 of the academic year 2022 / 2023, I was teaching a course on tensor categories at NUS. The lecture notes and exercises are available here:
-<a href="https://jgruber4.github.io/lecture_notes/tensorcategories.pdf" target="_blank">lecture notes</a><a href="https://jgruber4.github.io/lecture_notes/exercises.pdf" target="_blank">exercises</a>
+<a href="https://jgruber4.github.io/lecture_notes/tensorcategories.pdf" target="_blank">lecture notes</a> <a href="https://jgruber4.github.io/lecture_notes/exercises.pdf" target="_blank">exercises</a>
 
 </div>
 
 <div class="tiny" id="impressum">
-  Last updated on October 12, 2023.
+  Last updated on October 24, 2024.
 </div>
 
 </body>
